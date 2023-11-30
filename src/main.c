@@ -98,7 +98,7 @@ void lcdInit(void){
 	lcdClear();
 }
 
-void lcdPrint(char *string){
+void lcdPrint(const char *string){
 	while(*string){ // Пока в строке не кончились символы, выводим
 		lcdWriteData(*string);
 		string++;
